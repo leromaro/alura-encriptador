@@ -1,9 +1,14 @@
 body{
     background-color: #E5E5E5;
+    max-width: 95%;
+    margin: 0 auto;
 }
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    /* width: 100 0 90 %;
+    justify o align
+    max-width */
 }
 .logo{
     grid-column: 1 / 2;
@@ -17,6 +22,10 @@ body{
 .texto{
     grid-column: 1 / 3;
     justify-self: center;
+}
+#txt-encript::placeholder {
+    text-align: center;
+    padding-top: 30px;
 }
 textarea{
     border: none;

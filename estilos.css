@@ -5,8 +5,7 @@ body{
 }
 .container{
     display: grid;
-    grid-template-columns: repeat(3, minmax(25%, 1fr));
-    grid-template-rows: 100px 250px 150px 100px 50px;
+    grid-template-columns: 1fr 1fr 1fr;
     /* width: 100 0 90 %;
     justify o align
     max-width */
@@ -22,24 +21,23 @@ body{
 }
 .texto{
     grid-column: 1 / 3;
-    width: 90%;
+    justify-self: center;
 }
 #txt-encript::placeholder {
     text-align: center;
     padding-top: 30px;
 }
-#txt-encript{
+textarea{
     border: none;
     background-color: #E5E5E5;
     resize: none;
-    width: 60%;
-    height: 30%;
-    margin: 10% 25%;
+    max-width: 90%;
+    max-height: 60%;
 }
 .frame{
     grid-column: 1 / 3;
     margin-left: 80px;
-    margin-top: 50px;    
+    margin-top: 150px;    
 }
 .botton1{
     grid-column: 1 / 2;
@@ -51,16 +49,13 @@ body{
 }
 .aside{
     grid-column: 3 / 4;
-    grid-row: 1 / 5;
+    grid-row: 1 / 6;
     background-color: white;
     border-radius: 32px;
     width: 90%;
-    min-height: 400px;
+    min-height: 500px;
     padding: 20px;
     text-align: center;
-}
-.overflow{
-    overflow: auto;
 }
 #btn-copiar{
     display:none;
@@ -73,7 +68,7 @@ body{
 }
 .footer{
     grid-column: 1 / 4;
-    grid-row: 5/6 ;
+    grid-row: 6/7 ;
     justify-self: center;
     padding: 20px;
     margin-top: 20px;
